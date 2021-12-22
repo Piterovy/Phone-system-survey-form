@@ -15,7 +15,7 @@
   
 <div class="container">
   <header class="header">
-       <h1 id="title">Phone system Survey Form</h1>
+       <h1 id="title">Phone System Survey Form</h1>
        <p id="description">Thank you for your time spent to help us improve our system</p>
   </header>
   <form id="survey-form">
@@ -53,6 +53,205 @@
           class="form-control"
           placeholder="Extension number"
         />
+      </div>
+      <div class="form-group">
+        <p>Which extension type are you using mostly?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select mostly used extension</option>
+          <option value="deskphone">Desk Phone</option>
+          <option value="mobileapp">Mobile Application</option>
+          <option value="browserapp">Browser Application</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What kind of user are you?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Agent or admin?</option>
+          <option value="agent">Agent</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>How would you rate our phone system? <em>(1 - very bad, 5 - very good)</em></p>
+        <label>
+          <input
+            name="user-rating"
+            value="verybad"
+            type="radio"
+            class="input-radio"
+            checked
+          />Very Bad</label
+        >
+        <label>
+          <input
+            name="user-rating"
+            value="bad"
+            type="radio"
+            class="input-radio"
+          />Bad</label
+        >
+        <label
+          ><input
+            name="user-rating"
+            value="average"
+            type="radio"
+            class="input-radio"
+          />Average</label
+        >
+        <label
+          ><input
+            name="user-rating"
+            value="good"
+            type="radio"
+            class="input-radio"
+          />Good</label
+        >
+        <label
+          ><input
+            name="user-rating"
+            value="average"
+            type="radio"
+            class="input-radio"
+          />Very Good</label
+        >
+      </div>
+      <div class="form-group">
+          <p>How would you rate our customer service and technical support? <em>(1 - very bad, 5 - very good)</em></p>
+          <label>
+            <input
+              name="user-rating"
+              value="verybad"
+              type="radio"
+              class="input-radio"
+              checked
+            />Very Bad</label
+          >
+          <label>
+            <input
+              name="user-rating"
+              value="bad"
+              type="radio"
+              class="input-radio"
+            />Bad</label
+          >
+          <label
+            ><input
+              name="user-rating"
+              value="average"
+              type="radio"
+              class="input-radio"
+            />Average</label
+          >
+          <label
+            ><input
+              name="user-rating"
+              value="good"
+              type="radio"
+              class="input-radio"
+            />Good</label
+          >
+          <label
+            ><input
+              name="user-rating"
+              value="average"
+              type="radio"
+              class="input-radio"
+            />Very Good</label
+          >
+      </div>
+      <div class="form-group">
+        <p>
+          Is there anything you would like us to work on?
+          <em>(Check all that apply)</em>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="customer-service"
+            type="checkbox"
+            class="input-checkbox"
+          />Customer Service</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="agent-dashboard"
+            type="checkbox"
+            class="input-checkbox"
+          />Agent dashboard</label
+        >
+        <label>
+            <input
+              name="prefer"
+              value="admin-dashboard"
+              type="checkbox"
+              class="input-checkbox"
+            />Admin dashboard</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="routing"
+              type="checkbox"
+              class="input-checkbox"
+            />Routing section</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="reporting"
+              type="checkbox"
+              class="input-checkbox"
+            />Monitoring and Reporting section</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="sound"
+              type="checkbox"
+              class="input-checkbox"
+            />Sound quality</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Knowledgebase"
+              type="checkbox"
+              class="input-checkbox"
+            />Portal's Knowledgebase</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="directory"
+              type="checkbox"
+              class="input-checkbox"
+            />Company directory</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="video-conferencing"
+              type="checkbox"
+              class="input-checkbox"
+            />Video Conferencing</label
+          >
+      </div>
+      <div class="form-group">
+          <p>Would you like to add something or have any suggestions?</p>
+          <textarea
+          id="suggestions"
+          class="input-textarea"
+          name="suggestion"
+          placeholder="Please enter your comments and suggestions..."
+          ></textarea>
+      </div>
+      <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+              Submit
+          </button>
       </div>
   </form>
 </div>
