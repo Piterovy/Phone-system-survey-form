@@ -14,7 +14,47 @@
 <body>
   
 <div class="container">
-  
+  <header class="header">
+       <h1 id="title">Phone system Survey Form</h1>
+       <p id="description">Thank you for your time spent to help us improve our system</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Extension number<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="extension"
+          id="number"
+          min="1000"
+          max="9999"
+          class="form-control"
+          placeholder="Extension number"
+        />
+      </div>
+  </form>
 </div>
 
 <script>
